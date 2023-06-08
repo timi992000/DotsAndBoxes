@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotsAndBoxes.Core", "DotsAndBoxes.Core\DotsAndBoxes.Core.csproj", "{603CD411-5BC0-4D68-8B2E-9519A87F4A9E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotsAndBoxes.WPF", "DotsAndBoxes.WPF\DotsAndBoxes.WPF.csproj", "{521274AA-D2A6-44A8-A21E-A6334C461339}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{603CD411-5BC0-4D68-8B2E-9519A87F4A9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{603CD411-5BC0-4D68-8B2E-9519A87F4A9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{603CD411-5BC0-4D68-8B2E-9519A87F4A9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{603CD411-5BC0-4D68-8B2E-9519A87F4A9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{521274AA-D2A6-44A8-A21E-A6334C461339}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{521274AA-D2A6-44A8-A21E-A6334C461339}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{521274AA-D2A6-44A8-A21E-A6334C461339}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{521274AA-D2A6-44A8-A21E-A6334C461339}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,74 @@
+﻿<UserControl x:Class="DotsAndBoxes.WPF.Views.StartupDialogView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:s="clr-namespace:System;assembly=mscorlib"
+             xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
+        mc:Ignorable="d">
+    <StackPanel x:Name="HeaderLine"
+                Margin="5"
+                    Orientation="Vertical">
+        <StackPanel x:Name="PlayerSelection"
+                        Orientation="Horizontal"
+                    Height="20">
+                <CheckBox x:Name="PlayerRed"
+                          IsChecked="{Binding IsRedPlayerChecked, Mode=TwoWay}"
+                          mah:CheckBoxHelper.BackgroundUnchecked="Red"
+                          mah:CheckBoxHelper.BackgroundChecked="Red"
+                          mah:CheckBoxHelper.CheckGlyphForegroundChecked="Red"
+          mah:CheckBoxHelper.CheckGlyphForegroundCheckedMouseOver="Red"/>
+            <CheckBox x:Name="PlayerYellow"
+                          IsChecked="{Binding IsYellowPlayerChecked, Mode=TwoWay}"
+                          mah:CheckBoxHelper.BackgroundUnchecked="Yellow"
+                          mah:CheckBoxHelper.BackgroundChecked="Yellow"
+                          mah:CheckBoxHelper.CheckGlyphForegroundChecked="Yellow"
+          mah:CheckBoxHelper.CheckGlyphForegroundCheckedMouseOver="Yellow"/>
+            <CheckBox x:Name="PlayerGreen"
+                      IsChecked="{Binding IsGreenPlayerChecked, Mode=TwoWay}"
+                          mah:CheckBoxHelper.BackgroundUnchecked="Green"
+                          mah:CheckBoxHelper.BackgroundChecked="Green"
+                          mah:CheckBoxHelper.CheckGlyphForegroundChecked="Green"
+          mah:CheckBoxHelper.CheckGlyphForegroundCheckedMouseOver="Green"/>
+            <CheckBox x:Name="PlayerBlue"
+                      IsChecked="{Binding IsBluePlayerChecked, Mode=TwoWay}"
+                          mah:CheckBoxHelper.BackgroundUnchecked="Blue"
+                          mah:CheckBoxHelper.BackgroundChecked="Blue"
+                          mah:CheckBoxHelper.CheckGlyphForegroundChecked="Blue"
+          mah:CheckBoxHelper.CheckGlyphForegroundCheckedMouseOver="Blue"/>
+        </StackPanel>
+
+        <StackPanel x:Name="Config" Orientation="Vertical" >
+            <StackPanel x:Name="FieldSize" Orientation="Horizontal">
+                <Label Content="Field Size"
+                           Width="70"/>
+                <TextBox InputScope="Number"
+                             Width="40"
+                             Text="{Binding FieldSize, Mode=TwoWay}"
+                             Margin="5 5 5 0"/>
+            </StackPanel>
+            <StackPanel x:Name="BoxSize" Orientation="Horizontal">
+                <Label Content="Box Size"
+                           Width="70"/>
+                <TextBox InputScope="Number"
+                             Width="40"
+                             Text="{Binding BoxSize, Mode=TwoWay}"
+                             Margin="5 5 5 0"/>
+            </StackPanel>
+            <StackPanel x:Name="EllipseSize" Orientation="Horizontal">
+                <Label Content="Ellipse Size"
+                           Width="70"/>
+                <TextBox InputScope="Number"
+                             Width="40"
+                             Text="{Binding EllipseSize, Mode=TwoWay}"
+                             Margin="5 5 5 0"/>
+            </StackPanel>
+            <Button Content="Start"
+                Height="30"
+                    Margin="0 5 0 0"
+                VerticalAlignment="Top"
+                Click="Button_Click"/>
+        </StackPanel>
+       
+    </StackPanel>
+</UserControl>
